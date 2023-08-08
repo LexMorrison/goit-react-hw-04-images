@@ -7,17 +7,13 @@ import { LoadMoreButton } from './Button/Button';
 import { Loader } from './Loader/Loader';
 
 function PixabayGallery() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('cat');
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [arrayImages, setArrayImages] = useState([]);
   const [loader, setLoader] = useState(false);
 
   useEffect(() => {
-    if (search === '') {
-      return;
-    }
-
     const fetchImages = async () => {
       try {
         setLoader(true);
