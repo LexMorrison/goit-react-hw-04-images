@@ -7,7 +7,7 @@ import { LoadMoreButton } from './Button/Button';
 import { Loader } from './Loader/Loader';
 
 function PixabayGallery() {
-  const [search, setSearch] = useState('cat');
+  const [search, setSearch] = useState('human');
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [arrayImages, setArrayImages] = useState([]);
